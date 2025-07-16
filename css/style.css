@@ -6,7 +6,6 @@ body{
         padding: 2rem;
         border-radius: 2rem;
         background-color: #733fc8;
-        margin-bottom: 3rem;
     }
 .profile{
         display: flex;
@@ -29,27 +28,23 @@ body{
         padding: 2rem;
         border-radius: 2rem;
         background-color: #49556b;
-        margin-bottom: 3rem;
 }
 .card3{
         padding: 2rem;
         border-radius: 2rem;
         background-color: #ffffff;
-        margin-bottom: 3rem;
 }
 .card4{
         padding: 2rem;
         border-radius: 2rem;
         background-color: #18202d;
-        margin-bottom: 3rem;   
 }
 .card5{
         padding: 2rem;
         border-radius: 2rem;
         background-color: #ffffff;
-        margin-bottom: 3rem;
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
     body{
         padding: 4%;
     }
@@ -58,10 +53,16 @@ body{
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
+        grid-template-areas: none;
+        width: 100vw;
+    }
+    .card1,.card2,.card3,.card4,.card5{
+        grid-column: auto;
+        grid-row: auto;
     }
 
 }
-@media (max-width:1440px) {
+/* @media (max-width:14400000px), (min-width: 10000px) {
     .card{
         display: grid;
         grid-template-columns: repeat(3,1fr );
@@ -70,6 +71,8 @@ body{
         "topleft topmiddle topright"
         "bottomleft bottommiddle . "
         ;
+        
+        
         
     }
     .card1{
@@ -82,10 +85,9 @@ body{
         grid-area: topright;
     }
     .card4{
-        grid-area: bottonleft;
+        grid-area: bottomleft;
     }
     .card5{
         grid-area: bottommiddle;
-    }
-
-}
+    }   
+}  */
