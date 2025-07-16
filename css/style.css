@@ -44,17 +44,17 @@ body{
         border-radius: 2rem;
         background-color: #ffffff;
 }
-@media (max-width:767px) {
+@media (max-width:768px) {
     body{
         padding: 4%;
     }
 
-    .card{
+    .cards{
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
         grid-template-areas: none;
-        width: 100vw;
+        width: 100%;
     }
     .card1,.card2,.card3,.card4,.card5{
         grid-column: auto;
@@ -62,16 +62,16 @@ body{
     }
 
 }
-/* @media (max-width:14400000px), (min-width: 10000px) {
-    .card{
+@media  (min-width: 768px) {
+    .cards{
         display: grid;
-        grid-template-columns: repeat(3,1fr );
+        grid-template-columns: repeat(4,1fr );
         gap: 2rem;
         grid-template-areas: 
-        "topleft topmiddle topright"
-        "bottomleft bottommiddle . "
+        "topleft topleft topmiddle topright"
+        "bottomleft bottommiddle bottommiddle topright"
         ;
-        
+
         
         
     }
@@ -80,9 +80,11 @@ body{
     }
     .card2{
         grid-area: topmiddle;
+        
     }
     .card3{
         grid-area: topright;
+        grid-column: ;
     }
     .card4{
         grid-area: bottomleft;
@@ -90,4 +92,4 @@ body{
     .card5{
         grid-area: bottommiddle;
     }   
-}  */
+}  
